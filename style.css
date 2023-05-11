@@ -1,0 +1,139 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+:root {
+    --orange:hsl(25, 97%, 53%);
+    --light-grey:hsl(217, 12%, 63%);
+    --dark-grey:hsl(216, 12%, 8%);
+    --midle-grey:hsl(213, 13%, 28%);
+    --blue-grey:hsl(213, 19%, 18%);
+    --white: hsl(0, 0%, 100%);
+}
+
+body {
+    background-color: var(--dark-grey);
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Overpass', sans-serif;
+    
+}
+
+.container {
+    background-color: var(--blue-grey);
+    max-width:390px ;
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+    padding: 20px 20px;
+    border-radius: 25px;
+    margin: 25px;
+}
+
+h1 {
+    color: var(--white);
+    font-size: 2rem;
+    margin-bottom: 15px;
+}
+
+p {
+    color: var(--light-grey);
+    line-height: 1.5rem;
+    
+}
+.rate-content{
+    display: flex;
+}
+
+.rating-numbers {
+    display: flex;
+    justify-content: space-around;
+    
+    
+}
+
+.rating-btn, .rating-btn-star {
+    background-color: var(--midle-grey);
+    border-radius: 100%;
+    width: 50px;
+    height: 50px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: none;
+    color: var(--light-grey);
+}
+.rating-btn:hover {
+    background-color: hsl(216, 12%, 54%);
+    color: var(--white);
+    cursor: pointer;
+}
+.rating-btn:focus {
+    color: var(--white);
+    background-color: var(--orange);
+    
+}
+.submit-btn {
+    background-color: var(--orange);
+    color: var(--white);
+    font-weight: 700;
+    text-transform: uppercase;
+    padding: 15px 0;
+    border: none;
+    border-radius: 50px;
+    width: 90%;
+    margin: 0 auto 10px;
+    letter-spacing: 1.75px;
+    cursor: pointer;
+    transition: 0.25s;
+}
+.submit-btn:hover {
+    background-color: var(--white);
+    color: var(--orange);
+}
+
+
+
+
+.thanks-content {
+    text-align: center;
+    display: none;
+}
+
+.thanks-content img {
+    width: 50%;
+    margin: 0 auto;
+    padding: 22px 0 0 0;
+}
+.sub-title {
+    color: var(--white);
+    font-size: 2rem;
+}
+
+.rating-result {
+    color: var(--orange);
+    background-color: hsl(212, 12%, 21%);
+    width: 50%;
+    text-align: center;
+    margin: 0 auto;
+    border-radius: 25px;
+    padding: 5px 0;
+
+}
+.result-content p{
+    margin: 15px 0 15px; 
+}
+
+
+
+footer {
+    color: var(--white);
+
+}
+footer a {
+    color: aqua;
+}
